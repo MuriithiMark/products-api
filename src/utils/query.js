@@ -6,6 +6,6 @@ import dbConnection from "../db/index.js";
  * @param {(string | number)[]} params 
  * @returns {Promise<any>}
  */
-export default async function query(sql, params) {
-	return await dbConnection.query(sql, params)
-}
+const query =  dbConnection.query
+
+export default query;
