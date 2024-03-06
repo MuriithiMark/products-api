@@ -10,14 +10,6 @@ const retrieveProductId = (req, res, next) => {
             .send({ status: 'fail', message: 'product id is invalid' })
             .end()
     }
-    // const productId = Number(req.params.productId);
-    // if (isNaN(productId)) {
-    //     return res
-    //         .status(400)
-    //         .send({ status: 'fail', message: 'product id is invalid' })
-    //         .end()
-    // }
-    // req.productId = productId;
     req.productId = req.params.productId;
     next()
 }

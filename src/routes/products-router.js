@@ -11,7 +11,7 @@ import {
 import {
     newProductsSchema,
     updateProductsSchema
-} from "../utils/validations/products-schema.js";
+} from "../utils/validations/products-validations.js";
 import {
     checkForErrorsORData,
     retrieveProductId
